@@ -21,6 +21,7 @@ requirements:
     - python >=3.6,<4.0
   run:
     - python >=3.6,<4.0
+    - pyyaml >=6.0
 
 test:
   imports:
