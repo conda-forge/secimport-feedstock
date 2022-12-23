@@ -1,5 +1,5 @@
 {% set name = "secimport" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/secimport-{{ version }}.tar.gz
-  sha256: 734ae41d510c7d78f1f8322bbdff49cf3ab3a66cce3bcd393db1581b577c6f65
+  sha256: ea8de9547f02cd0e64aebdcd84393a4eb36769e505b3ee0ede808eba90edfcc9
 
 build:
   noarch: python
@@ -20,9 +20,9 @@ requirements:
     - poetry-core >=1.0.0
     - python >=3.6,<4.0
   run:
-    - numpy
+    - fire >=0.4.0,<0.5.0
     - python >=3.6,<4.0
-    - pyyaml >=6.0
+    - pyyaml >=6.0,<7.0
 
 test:
   imports:
