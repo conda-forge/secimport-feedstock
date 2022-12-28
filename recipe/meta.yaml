@@ -1,5 +1,5 @@
 {% set name = "secimport" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/secimport-{{ version }}.tar.gz
-  sha256: ea8de9547f02cd0e64aebdcd84393a4eb36769e505b3ee0ede808eba90edfcc9
+  sha256: 5439ee0a63c1edc6798da57edf6d331240a272c1376be2040b154dc426043238
 
 build:
   noarch: python
