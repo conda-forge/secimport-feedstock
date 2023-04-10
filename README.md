@@ -1,11 +1,11 @@
-About secimport
-===============
+About secimport-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/secimport-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/avilum/secimport
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/secimport-feedstock/blob/main/LICENSE.txt)
 
 Summary: A sandbox/supervisor for python modules.
 
