@@ -6,13 +6,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/secimport-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/secimport-{{ version }}.tar.gz
   sha256: 6748540c911beb4aed5bdc192ffa139c275507d0f526cf6a25ccfc4c2531a29c
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - secimport = secimport.cli:main
 
@@ -20,10 +20,10 @@ requirements:
   host:
     - pip
     - poetry-core >=1.0.0
-    - python >=3.7,<4.0
+    - python {{ python_min }}
   run:
     - fire >=0.4,<0.7
-    - python >=3.7,<4.0
+    - python >={{ python_min }},<4.0
     - pyyaml >=6.0.0,<7.0.0
 
 test:
@@ -34,6 +34,7 @@ test:
     - secimport --help
   requires:
     - pip
+    - python {{ python_min }}
 about:
   home: https://github.com/avilum/secimport
   summary: A sandbox/supervisor for python modules.
