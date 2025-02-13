@@ -22,9 +22,9 @@ requirements:
     - poetry-core >=1.0.0
     - python {{ python_min }}
   run:
-    - fire >=0.4,<0.7
     - python >={{ python_min }},<4.0
     - pyyaml >=6.0.0,<7.0.0
+    - typer >=0.15.1,<0.16.0
 
 test:
   imports:
